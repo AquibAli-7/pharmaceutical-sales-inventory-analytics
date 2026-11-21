@@ -1,0 +1,25 @@
+table,action,rows_before,rows_after,rows_removed,column,values_changed,values_processed
+sales,Remove exact duplicate rows,49668.0,49433.0,235.0,,,
+sales,Trim spaces and uppercase identifiers,,,,product_id,197.0,
+products,Standardise text: strip,,,,product_name,12.0,
+products,Standardise text: title,,,,manufacturer,8.0,
+customers,Standardise text: title,,,,city,6.0,
+sales,Parse ISO and day/month/year dates,,,,sale_date,,49433.0
+sales,Remove currency formatting and convert to numeric,,,,unit_price_inr,,49433.0
+sales,Convert to positive whole-number quantity,,,,quantity_packs,,49433.0
+sales,Convert to numeric and validate percentage range,,,,discount_pct,,49433.0
+sales,Map missing customers to explicit unknown customer,,,,customer_id,161.0,
+batches,Convert ISO text to date,,,,manufacture_date,,1880.0
+batches,Convert ISO text to date,,,,expiry_date,,1880.0
+stock_receipts,Convert ISO text to date,,,,receipt_date,,1880.0
+stock_adjustments,Convert ISO text to date,,,,adjustment_date,,69.0
+inventory_month_end,Convert ISO text to date,,,,snapshot_date,,2400.0
+products,Convert and validate: positive_integer,,,,pack_size_units,,100.0
+products,Convert and validate: positive_decimal,,,,standard_cost_inr,,100.0
+products,Convert and validate: positive_decimal,,,,list_price_inr,,100.0
+products,Convert and validate: nonnegative_integer,,,,reorder_point_packs,,100.0
+products,Convert and validate: positive_integer,,,,target_stock_packs,,100.0
+batches,Convert and validate: positive_decimal,,,,unit_cost_inr,,1880.0
+stock_receipts,Convert and validate: positive_integer,,,,quantity_received_packs,,1880.0
+stock_adjustments,Convert and validate: negative_integer,,,,quantity_change_packs,,69.0
+inventory_month_end,Convert and validate: nonnegative_integer,,,,closing_stock_packs,,2400.0

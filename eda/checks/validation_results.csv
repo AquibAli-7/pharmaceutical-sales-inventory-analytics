@@ -1,0 +1,7 @@
+check,records_checked,issues_found,status
+Month-end stock reconciliation,2400,0,PASS
+Sales with an unmatched batch,49433,0,PASS
+Sales with the wrong batch product,49433,0,PASS
+Sales on or after batch expiry,49433,0,PASS
+Sales before batch manufacture,49433,0,PASS
+Negative batch closing stock on movement dates,50414,0,PASS
